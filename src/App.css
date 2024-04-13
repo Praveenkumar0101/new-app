@@ -135,4 +135,43 @@ width: 400px !important;
 
 
 
+.card-news-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure each card takes up the full height */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-news-item .card-img-top {
+  width: 100%;
+  height: 200px; /* Adjust the height of the image as needed */
+  object-fit: cover;
+}
+
+.card-news-item .card-body {
+  flex: 1; /* Allow the card body to grow to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card-news-item .card-body .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-news-item .card-body .card-text {
+  flex: 1; /* Allow the card text to grow vertically */
+  margin-bottom: 1rem;
+}
+
+.card-news-item .d-flex {
+  margin-top: auto; /* Push the button group to the bottom */
+}
+
+
+
+
+
 
