@@ -70,7 +70,6 @@
 // }
 
 // export default News;
-
 import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -105,12 +104,12 @@ function News(props) {
         const url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&page=${nextPage}&apiKey=ecfaf9eaaa8d40a5b5d769210f5ee616`;
         const data = await fetch(url);
         const parsedData = await data.json();
-        setArticles([...articles, ...parsedData.articles]);
+        setArticles((prevArticles) => [...prevArticles, ...parsedData.articles]);
     };
 
     return (
-        <div className="container"> {/* Apply container styling */}
-            {articles.length > 0 && (
+        <div className="container">
+            {totalResults > 0 && (
                 <InfiniteScroll
                     dataLength={articles.length}
                     next={fetchData}
