@@ -71,7 +71,6 @@
 
 // export default News;
 
-
 import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -143,3 +142,4 @@ function News(props) {
 }
 
 export default News;
+
