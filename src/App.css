@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,104 @@
   to {
     transform: rotate(360deg);
   }
+} */
+/* .col-md-4{
+  width: 400px !important;
+  
+} */
+/* .container my-3 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
 }
+
+.container my-3:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+/* Styles for properties inside NewsItem */
+.news-box .sourceName {
+  font-weight: bold;
+  color: #333;
+}
+
+.news-box .title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.news-box .desc {
+  margin-top: 10px;
+}
+
+.news-box .image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.news-box .newsUrl {
+  display: block;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.col-md-4{
+width: 400px !important;
+}
+/* body{
+  background-color: #282c34 !important;
+} */
+
+/* Image{
+  width: 50px !important;
+} */
+/* Add this CSS to your stylesheet */
+/* .card {
+  width: 100%;
+  height: 100px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  /* object-fit: cover;
+}
+
+.card-body {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */ 
+
+/* App.css */
+
+/* Add this CSS to your stylesheets */
+/* App.css */
+
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally center the cards */
+  align-items: center; /* Vertically center the cards */
+  padding: 20px; /* Add padding around the container */
+  margin: 0;
+}
+
+/* .card { */
+  /* margin-left: 50px; Add margin around each card */
+  /* Add any other styling specific to the cards */
+/* } */
+
+.card-news-item{
+  margin-left: 50px;
+  width: 100%;
+}
+
+
+
+
+
