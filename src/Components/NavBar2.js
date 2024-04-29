@@ -6,15 +6,12 @@ function NavBar2() {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const location = useLocation();
 
-    // Update active link based on current location
     React.useEffect(() => {
         setActiveLink(location.pathname);
     }, [location]);
 
-    // Function to handle toggling dark mode
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
-        // Toggle between black and white background color
         if (!isDarkMode) {
             document.body.style.backgroundColor = "black";
             document.body.style.color = "white";
@@ -25,10 +22,9 @@ function NavBar2() {
     };
 
     return (
-        <div style={{ marginTop: "10px" }}> {/* Added margin-top */}
+        <div style={{ marginTop: "10px" }}>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    {/* Removed toggle theme button */}
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
@@ -89,7 +85,6 @@ function NavBar2() {
                             </li>
                         </ul>
                     </div>
-                    {/* Add dark/light mode indicator */}
                     <div 
                         className="btn btn-primary" 
                         style={{ cursor: "pointer" }}

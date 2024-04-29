@@ -1,5 +1,5 @@
 import React from "react";
-import "./NewsItem.css"; // Import CSS file for NewsItem component
+import "./NewsItem.css"; 
 
 function NewsItem({ sourceName, title, desc, imageURL, newsUrl }) {
     const shareNews = async () => {
@@ -15,12 +15,12 @@ function NewsItem({ sourceName, title, desc, imageURL, newsUrl }) {
             }
         } catch (error) {
             console.error('Error sharing news:', error);
-            // Fallback to some other method if sharing fails
+            
         }
     };
 
     return (
-        <div className="card-news-item"> {/* Add news-item class for styling */}
+        <div className="card-news-item"> 
             <img src={imageURL} className="card-img-top" alt="news" />
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>

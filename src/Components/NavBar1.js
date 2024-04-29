@@ -7,7 +7,7 @@ function NewsItem(props) {
     const { desc, title, imageURL, newsUrl, sourceName, isFirst } = props;
     return (
         <div className={`card my-3 ${isFirst ? 'first-card' : ''}`}>
-            {/* Wrap the image in a container to apply the sliding effect */}
+            
             <div style={{}}>
                 <img src={"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/breaking-news-banner-design-template-43d6dcbf37ca0a7d1450cb20f76b96fb_screen.jpg?ts=1624954813"} className="card-img-top" alt="News" />
             </div>

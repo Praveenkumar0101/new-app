@@ -70,6 +70,7 @@
 // }
 
 // export default News;
+
 import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -80,11 +81,11 @@ function News(props) {
     const [articles, setArticles] = useState([]);
     const [totalResults, setTotalResults] = useState(0);
     const [page, setPage] = useState(1);
-    const [theme, setTheme] = useState("light"); // State to track the current theme
+    const [theme, setTheme] = useState("light");
 
-    const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light"); // Toggle between light and dark theme
-    };
+    // const toggleTheme = () => {
+    //     setTheme(theme === "light" ? "dark" : "light"); 
+    // };
 
     const resultNews = async () => {
         const url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&page=${page}&apiKey=ecfaf9eaaa8d40a5b5d769210f5ee616`;
