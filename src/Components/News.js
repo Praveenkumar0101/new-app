@@ -22,7 +22,9 @@ function News(props) {
 
     useEffect(() => {
         resultNews();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [props.category, page]);
+    
 
     const fetchData = async () => {
         const nextPage = page + 1;
