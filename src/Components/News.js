@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NewsItem from "./NewsItem";
@@ -23,7 +22,7 @@ function News(props) {
 
     useEffect(() => {
         resultNews();
-    }, []);
+    }, [props.category, page]);
 
     const fetchData = async () => {
         const nextPage = page + 1;
