@@ -1,7 +1,7 @@
 // App.js
 import React from "react";
-import NavBar2 from "./Components/NavBar2";
 import NavBar1 from "./Components/NavBar1";
+import NavBar2 from "./Components/NavBar2";
 import News from "./Components/News";
 import { BrowserRouter, Route, Routes } 
 	from "react-router-dom";
